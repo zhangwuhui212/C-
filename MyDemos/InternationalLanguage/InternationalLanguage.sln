@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InternationalLanguage", "InternationalLanguage\InternationalLanguage.vcxproj", "{B38975B6-F16A-4919-953B-634EB76FFD80}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InternationalLanguage_2052", "InternationalLanguage_2052\InternationalLanguage_2052.vcxproj", "{75C3570A-D333-4399-989E-2F569DBE5F9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B38975B6-F16A-4919-953B-634EB76FFD80}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B38975B6-F16A-4919-953B-634EB76FFD80}.Debug|Win32.Build.0 = Debug|Win32
+		{B38975B6-F16A-4919-953B-634EB76FFD80}.Release|Win32.ActiveCfg = Release|Win32
+		{B38975B6-F16A-4919-953B-634EB76FFD80}.Release|Win32.Build.0 = Release|Win32
+		{75C3570A-D333-4399-989E-2F569DBE5F9B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75C3570A-D333-4399-989E-2F569DBE5F9B}.Debug|Win32.Build.0 = Debug|Win32
+		{75C3570A-D333-4399-989E-2F569DBE5F9B}.Release|Win32.ActiveCfg = Release|Win32
+		{75C3570A-D333-4399-989E-2F569DBE5F9B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
