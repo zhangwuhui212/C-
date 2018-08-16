@@ -1,0 +1,83 @@
+appid=wang&apppassword=1231231
+verifycode=9B1365094F0640f6982E8A09967776D3&cpage=1&deviceid=015899898985&map=BAIDU&loadmapaddinfo=1
+verifycode=9B1365094F0640f6982E8A09967776D3&cpage=1&deviceid=015899898985&map=BAIDU&starttime=1450929091&endtime=1450954291
+
+
+以下命令使用post方式
+
+1./oauth/login
+POST /db_center/1000 HTTP/1.1
+Host: www.wrox.com
+Content-Length: 51
+
+verifycode=1B6DD20B99E74c50BA7714D66622410A&cpage=1
+
+appid=wang&apppassword=1231231
+
+
+
+http://218.241.233.119:8001/db_center/1002/index.html?verifycode=1627D5B36518479f8376FA81A9F9607B&cpage=1&deviceid=015899898985&map=BAIDU&starttime=1450929091&endtime=1450954291
+
+以下命令使用get方式
+
+1./oauth/appAuthorize
+http://localhost:8001/db_center/1005/Index.Html?appid=wang&apppassword=1231231
+
+{ "state" : 0, "result_str" : "", "result" : { "verifycode" : "9B1365094F0640f6982E8A09967776D3", "expires_in" : 3600 } }
+
+2./gps/getDeviceList
+http://localhost:8001/db_center/1000/index.html?verifycode=AEA346A4105A4669B7031EDB0FA2C433&cpage=1
+
+{ "state" : 0, "result_str" : "", "result" : { "tpages" : 1, "cpage" : 1, "tsize" : 1, "csize" : 1, "valuelist" : [ { "deviceid" : "015899898985", "devicetype" : "8810" } ] } }
+
+
+3./gps/getDeviceGPS
+http://localhost:8001/db_center/1001/index.html?verifycode=AEA346A4105A4669B7031EDB0FA2C433&cpage=1&deviceid=015899898985&map=BAIDU&loadmapaddinfo=1
+
+{ "state" : 0, "result_str" : "", "result" : { "tpages" : 1, "cpage" : 1, "tsize" : 1, "csize" : 1, "valuelist" : [ { "deviceid" : "015899898985", "lat" : 108, "lng" : 34, "pt" : "2015-11-24 15:51:31", "mapaddinfo" : { "formatted_address" : "陕西省西安市周至县", "addressComponent" : { "city" : "西安市", "country" : "中国", "direction" : "", "distance" : "", "district" : "周至县", "province" : "陕西省", "street" : "", "street_number" : "", "country_code" : 0 } } } ] } }
+
+
+4./gps/getDeviceRoute
+
+http://localhost:8001/db_center/1002/index.html?verifycode=AEA346A4105A4669B7031EDB0FA2C433&cpage=1&deviceid=015899898985&map=BAIDU&starttime=1450929091&endtime=1450954291
+
+{ "state" : 0, "result_str" : "", "result" : { "tpages" : 1, "cpage" : 1, "tsize" : 1, "csize" : 1, "valuelist" : [ { "deviceid" : "015899898985", "lat" : 108, "lng" : 34, "pt" : 1450943491 } ] } }
+
+
+5./gps/getDeviceDayRoute
+
+http://218.241.233.119:8001/db_center/1006/index.html?verifycode=1B6DD20B99E74c50BA7714D66622410A&cpage=1&deviceid=015899898985&map=BAIDU&day=2015-12-24&starttime=08:00&endtime=16:51
+
+
+6./alarm/getDeviceAlarm
+{
+  "apiid" : "/alarm/getDeviceAlarm",
+  "apiname" : "实时报警查询",
+  "tag" : ""
+}
+{
+  "username" : "wang",
+  "apiid" : "/alarm/getDeviceAlarm"
+}
+
+http://218.241.233.119:8001/db_center/1003/index.html?verifycode=1B6DD20B99E74c50BA7714D66622410A&cpage=1&deviceid=015899898985
+
+{ "state" : 0, "result_str" : "", "result" : { "tpages" : 1, "cpage" : 1, "tsize" : 1, "csize" : 1, "valuelist" : [ { "alarm_id" : "e1", "cn" : "浣?", "en" : "you", "pt" : "2015-11-30 14:57:40" } ] } }
+
+
+7./alarm/getDeviceHisAlarm
+{
+  "apiid" : "/alarm/getDeviceHisAlarm",
+  "apiname" : "历史报警查询",
+  "tag" : ""
+}
+{
+  "username" : "wang",
+  "apiid" : "/alarm/getDeviceHisAlarm"
+}
+
+http://218.241.233.119:8001/db_center/1004/index.html?verifycode=1B6DD20B99E74c50BA7714D66622410A&cpage=1&deviceid=015899898985&starttime=1451458340&endtime=1451458641
+
+{ "state" : 0, "result_str" : "", "result" : { "tpages" : 1, "cpage" : 1, "tsize" : 3, "csize" : 3, "valuelist" : [ { "alarm_id" : "e1", "cn" : "浣?", "en" : "you", "pt" : "2015-11-30 14:57:40" }, { "error_id" : 3 }, { "error_id" : 3 } ] } }
+
+

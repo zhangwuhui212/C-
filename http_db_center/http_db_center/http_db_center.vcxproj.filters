@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\lib">
+      <UniqueIdentifier>{d1fee345-55a7-423e-9a81-e79d7079b810}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="http_db_center.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\http_lib\http_file_manager.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\http_lib\http_processor.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\http_lib\http_reply.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\http_lib\http_worker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\http_file_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\http_reply.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\http_processor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\http_string_encode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\http_request.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\dump_db_center.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\http_dump_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\http_dump_server.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\timer_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\http_lib\auth_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bdapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="http_static_api.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="http_page_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="log_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
